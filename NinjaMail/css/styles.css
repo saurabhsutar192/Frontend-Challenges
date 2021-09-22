@@ -234,6 +234,7 @@ nav {
     grid-gap: 50px;
     align-items: center; }
     .servicesContainer .services .cards {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
       background-color: #fff;
       height: 450px; }
       .servicesContainer .services .cards .cardImg {
@@ -283,6 +284,7 @@ nav {
     grid-gap: 40px;
     justify-content: center; }
     .memberContainer .members div {
+      position: relative;
       padding: 20px;
       height: 240px;
       display: flex;
@@ -290,12 +292,21 @@ nav {
       justify-content: flex-end; }
       .memberContainer .members div h4,
       .memberContainer .members div p {
-        color: #fff; }
+        color: #fff;
+        z-index: 1; }
       .memberContainer .members div h4 {
         font-size: 2rem;
         font-weight: 900; }
       .memberContainer .members div p {
         font-size: 1.2rem; }
+      .memberContainer .members div::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, #000000 -32.5%, rgba(84, 84, 84, 0.0001) 67.78%); }
     .memberContainer .members .frankie {
       background: url("../images/banner/frankie.png") no-repeat center/cover; }
     .memberContainer .members .camile {
