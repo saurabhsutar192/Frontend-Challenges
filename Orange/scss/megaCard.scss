@@ -54,6 +54,22 @@
   }
 }
 
+@media (max-width: 992px) {
+  .megaCardContainer {
+    .card {
+      h4 {
+        margin: 2vw 0;
+        padding: 10px 0;
+        font-size: 1.5vw;
+      }
+      p {
+        line-height: 3vw;
+        font-size: 1.5vw;
+      }
+    }
+  }
+}
+
 @media (max-width: 640px) {
   .megaCardContainer {
     transform: translateY(-100px);

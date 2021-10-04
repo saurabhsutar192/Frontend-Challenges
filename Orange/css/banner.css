@@ -110,6 +110,13 @@ nav {
   .bannerContainer .bannerImg img {
     width: 45vw; } }
 
+@media (max-width: 992px) {
+  body h3 {
+    font-size: 4vw; }
+  .bannerContainer .bannerDesc p {
+    font-size: 1.5vw;
+    line-height: 2.8vw; } }
+
 @media (max-width: 640px) {
   body h3 {
     font-size: 7vw; }

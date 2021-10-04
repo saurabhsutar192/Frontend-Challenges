@@ -103,7 +103,7 @@
 @media (min-width: 2560px) {
   .reviewContainer {
     &::after {
-      width: 56%;
+      width: 53%;
     }
   }
 }
@@ -148,6 +148,16 @@
         p {
           margin: 2vw 0;
         }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .reviewContainer {
+    .reviews {
+      .card {
+        font-size: 1.8vw;
+        line-height: 3.5vw;
       }
     }
   }
