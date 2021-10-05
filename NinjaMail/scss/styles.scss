@@ -309,6 +309,7 @@ nav {
     grid-template-columns: repeat(3, 320px);
     grid-gap: 50px;
     align-items: center;
+    z-index: 1;
 
     .cards {
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;

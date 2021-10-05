@@ -2,11 +2,10 @@
 
 .reviewContainer {
   margin: 100px 0;
-  padding: 0 30px;
+
   position: relative;
+
   @extend %centrofy;
-  height: 950px;
-  align-items: flex-start;
   &::after {
     position: absolute;
     content: "";
@@ -22,12 +21,15 @@
   .bigQuotesContainer {
     z-index: 1;
     padding: 30px 0;
-    // background: yellow;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     max-width: $max-width;
     .bigQuotes {
-      position: relative;
-
+      position: absolute;
+      left: 30px;
+      top: 30px;
       width: fit-content;
     }
     img {
@@ -47,42 +49,45 @@
     }
   }
   .reviews {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
+    position: relative;
+    padding: 200px 0px;
+    width: $max-width;
     @extend %centrofy;
-    z-index: 2;
 
     .cardContainer {
-      width: 100%;
-      padding: 30px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, 420px);
-      grid-gap: 2rem;
-      justify-content: center;
-      align-items: center;
+      z-index: 2;
+      width: 100vw;
+      padding: 40px 30px;
+      @extend %centrofy;
+      overflow: auto;
+      flex-wrap: nowrap;
+      padding-left: 350px;
+      justify-content: flex-start;
       &::-webkit-scrollbar {
         display: none;
       }
     }
 
     .card {
-      transform: translateX(50px);
-
-      height: 500px;
+      transform: translateX(0px);
+      min-width: 400px;
+      max-width: 400px;
+      min-height: 500px;
+      max-height: 500px;
       background: #fff;
       padding: 5rem 3rem;
       color: #7c7c7c;
       font-size: 1.2rem;
       line-height: 2.4rem;
-
+      margin-right: 2rem;
       border-radius: 20px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       box-shadow: 12px 12px 40px rgba(0, 0, 0, 0.25);
+      .desc {
+        height: 100%;
+      }
       span {
         color: black;
       }
@@ -95,6 +100,10 @@
       }
       p {
         margin: 2rem 0;
+
+        height: 65%;
+
+        overflow: auto;
       }
     }
   }
@@ -111,7 +120,7 @@
 @media (max-width: 1400px) {
   .reviewContainer {
     margin: 8vw 0;
-    height: 70vw;
+
     .bigQuotesContainer {
       img {
         width: 11.5vw;
@@ -126,19 +135,20 @@
     }
 
     .reviews {
+      padding: 13vw 0;
       .cardContainer {
-        grid-template-columns: repeat(auto-fit, 30vw);
-        grid-gap: 2vw;
+        padding-left: 25vw;
       }
-
       .card {
-        height: 35vw;
-
+        min-height: 40vw;
+        max-height: 40vw;
+        min-width: 30vw;
+        max-width: 30vw;
         padding: 5vw 3vw;
 
         font-size: 1.5vw;
         line-height: 3vw;
-        // margin-right: 2vw;
+        margin-right: 2vw;
         border-radius: 2vw;
 
         img {
@@ -166,7 +176,7 @@
 @media (max-width: 640px) {
   .reviewContainer {
     margin: 45vw 0 20vw 0;
-    height: 140vw;
+
     &::after {
       width: 80%;
     }
@@ -175,7 +185,7 @@
       padding: 0;
 
       .bigQuotes {
-        transform: translateY(-25vw);
+        transform: translateY(-30vw);
       }
       img {
         width: 15vw;
@@ -190,18 +200,18 @@
       }
     }
     .reviews {
+      padding: 20vw 0;
       .cardContainer {
-        overflow-x: auto;
-        grid-template-columns: repeat(2, 70vw);
-        justify-content: flex-start;
-        grid-gap: 4vw;
+        padding-left: 30px;
       }
-
       .card {
         transform: translateX(0px);
         position: relative;
-        height: 90vw;
-        margin-right: 0;
+        min-height: 90vw;
+        max-height: 90vw;
+        min-width: 70vw;
+        max-width: 70vw;
+        margin-right: 5vw;
         padding: 10vw 5vw;
 
         font-size: 5vw;
