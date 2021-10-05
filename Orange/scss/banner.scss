@@ -89,7 +89,7 @@ nav {
   color: rgb(255, 255, 255);
 
   .banner {
-    margin: 150px 30px 300px 30px;
+    margin: 120px 30px 300px 30px;
     @extend %centrofy;
     max-width: $max-width;
   }
@@ -126,7 +126,7 @@ nav {
   }
   .bannerContainer {
     .banner {
-      margin: 10vw 30px 20vw 30px;
+      margin: 8vw 30px 20vw 30px;
     }
     .bannerDesc {
       margin-right: 8%;
@@ -147,7 +147,7 @@ nav {
 @media (max-width: 992px) {
   body {
     h3 {
-      font-size: 4vw;
+      font-size: 3.9vw;
     }
   }
   .bannerContainer {

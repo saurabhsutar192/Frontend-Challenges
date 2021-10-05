@@ -78,7 +78,7 @@ nav {
   background: #f8765e;
   color: white; }
   .bannerContainer .banner {
-    margin: 150px 30px 300px 30px;
+    margin: 120px 30px 300px 30px;
     max-width: 1400px; }
   .bannerContainer .bannerDesc {
     margin-right: 12%;
@@ -100,7 +100,7 @@ nav {
   body input {
     margin-right: 1vw; }
   .bannerContainer .banner {
-    margin: 10vw 30px 20vw 30px; }
+    margin: 8vw 30px 20vw 30px; }
   .bannerContainer .bannerDesc {
     margin-right: 8%; }
     .bannerContainer .bannerDesc p {
@@ -112,7 +112,7 @@ nav {
 
 @media (max-width: 992px) {
   body h3 {
-    font-size: 4vw; }
+    font-size: 3.9vw; }
   .bannerContainer .bannerDesc p {
     font-size: 1.5vw;
     line-height: 2.8vw; } }
